@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <main>
+
+        <div class="menu-responsivo inactive">
+            <button class="btn-cerrar-menu">
+                <img src="img/boton.png" alt="">
+            </button>
+            <a href="index.html">Home</a>
+            <a href="./characters.html">Characters</a>
+            <a href="">Episodes</a>
+            <a href="">Locations</a>
+            <a href="">About</a>
+        </div>
+
+        <div class="contenedor--logos">
+            <a href="https://www.facebook.com/groups/1339948533119446" target="_blank">
+                <img src="img/logo_facebook.png" alt="logo-facebook">
+            </a>
+
+            <a href="https://www.instagram.com/nelsonmunoz.11/" target="_blank">
+                <img src="img/logo_instagram.png" alt="logo-instagram">
+            </a>
+
+            <a href="https://twitter.com/NelsonM78917577" target="_blank">
+                <img src="img/logo_twitter.png" alt="logo-twitter">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCIDzQ6Z9PQfXOUjDA-Nk8Cg" target="_blank">
+                <img src="img/logo_youtube.png" alt="logo-youtube">
+            </a>
+
+            <a href="https://github.com/Ginto11" target="_blank">
+                <img src="img/github.png" alt="logo-github">
+            </a>
+        </div>
+
+        <header class="header">
+            <div>
+                <h1>API RICK AND MORTY</h1>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="./characters.html">Characters</a>
+                <a href="./acerca.html">About</a>
+            </div>
+            <div class="btn-inactive">
+                <button class="icon icon-menu boton-menu"></button>
+            </div>
+        </header>
+
+        <section class="section">
+                
+            <div class="contenedor--articulo">
+                <h2 class="subtitulo">Proyecto</h2>
+                <br>
+                <article>
+                    <p>
+                        <div class="contenedor--imagen">
+                            <img src="img/fondo.jpg" alt="">
+                        </div>
+                        Este proyecto fue realizado con el fin de consumir un api gratuita para hacer un sitio web mas
+                        dinamico, tragendo la informacion desde un servidor y consumiendola desde <strong>JavaScript</strong>
+                        por medio de la <strong>Api Fetch</strong>, la cual nos permite acceder a los recursos de un servidor de 
+                        manera asincrona, utilizando solicitudes <strong>HTTP</strong>, este tipo de solicitudes tienen una ventaja 
+                        muy importante y es que se pueden ejcutar sin necesidad de cargar la pagina, las solicitudes principales que se pueden hacer son:
+                        
+                    </p>
+                    <br>
+                    <ul>
+                        <li>
+                            <strong>GET:</strong> Sirve para traer toda la informacion o la informacion de cierto elemento.
+                            Por otro lado tambien sirve para enviar la informacion pero la envia en la url.
+                        </li>
+                        <li>
+                            <strong>POST:</strong> Sirve para enviar la informacion pero en el cuerpo del mensaje. Y por el 
+                            contrario no se envian en la url, como el metodo get.
+                        </li>
+                        
+                        <li>
+                            <strong>PUT:</strong> Sirve para actualizar elemento. Se puede actualizar por id o por algun otro valor
+
+                        </li>
+                        <li><strong>DELETE:</strong> Sirve para eliminar elementos. Y se puede eliminar por id o por algun otro valor.</li>
+                    </ul>
+                    <br>
+                    <p>
+                        
+                    </p>
+                    
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h2 class="subtitulo">Contacto</h1>
+            
+            <div class="contenedor--form">
+                <form class="form" action="./assets/enviarMensaje.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input name="enviar" type="submit" value="Enviar">
+                </form>
+
+                <div class="contenedor--logos-2">
+                    <a href="https://www.facebook.com/groups/1339948533119446" target="_blank">
+                        <img src="img/logo_facebook.png" alt="logo-facebook">
+                    </a>
+
+                    <a href="https://www.instagram.com/nelsonmunoz.11/" target="_blank">
+                        <img src="img/logo_instagram.png" alt="logo-instagram">
+                    </a>
+
+                    <a href="https://twitter.com/NelsonM78917577" target="_blank">
+                        <img src="img/logo_twitter.png" alt="logo-twitter">
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCIDzQ6Z9PQfXOUjDA-Nk8Cg" target="_blank">
+                        <img src="img/logo_youtube.png" alt="logo-youtube">
+                    </a>
+
+                    <a href="https://github.com/Ginto11" target="_blank">
+                        <img src="img/github.png" alt="logo-github">
+                    </a>
+                </div>
+
+                <div class="contenedor--img">
+                    <img src="img/rick.webp" alt="" width="100%">
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

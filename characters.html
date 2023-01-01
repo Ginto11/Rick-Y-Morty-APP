@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <main>
+
+        <div class="menu-responsivo inactive">
+            <button class="btn-cerrar-menu">
+                <img src="img/boton.png" alt="">
+            </button>
+            <a href="index.html">Home</a>
+            <a href="./characters.html">Characters</a>
+            <a href="">Episodes</a>
+            <a href="">Locations</a>
+            <a href="">About</a>
+        </div>
+
+        <div class="contenedor--logos">
+            <a href="https://www.facebook.com/groups/1339948533119446" target="_blank">
+                <img src="img/logo_facebook.png" alt="logo-facebook">
+            </a>
+
+            <a href="https://www.instagram.com/nelsonmunoz.11/" target="_blank">
+                <img src="img/logo_instagram.png" alt="logo-instagram">
+            </a>
+
+            <a href="https://twitter.com/NelsonM78917577" target="_blank">
+                <img src="img/logo_twitter.png" alt="logo-twitter">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCIDzQ6Z9PQfXOUjDA-Nk8Cg" target="_blank">
+                <img src="img/logo_youtube.png" alt="logo-youtube">
+            </a>
+
+            <a href="https://github.com/Ginto11" target="_blank">
+                <img src="img/github.png" alt="logo-github">
+            </a>
+        </div>
+
+        <header class="header">
+            <div>
+                <h1>API RICK AND MORTY</h1>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="./characters.html">Characters</a>
+                <a href="./acerca.html">About</a>
+            </div>
+            <div class="btn-inactive">
+                <button class="icon icon-menu boton-menu"></button>
+            </div>
+        </header>
+
+        <div class="container--searcher">
+            <div class="searcher">
+                <h2>Searcher</h2>
+                <div>
+                    <input id="name" type="text" placeholder="Find by name.">
+                    <button id="search">Search</button>
+                </div>
+            </div>
+            
+            <div class="pages">
+                <h2>Page</h2>
+                <div>
+                    <button id="menoPage">Back</button>
+                    <input id="numPage" type="number" value="19" readonly>
+                    <button id="morePage">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="section--characters">
+                
+        </section>
+
+        <footer class="footer">
+            <h2 class="subtitulo">Contacto</h1>
+            
+            <div class="contenedor--form">
+                <form class="form" action="./assets/enviarMensaje.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input name="enviar" type="submit" value="Enviar">
+                </form>
+
+                <div class="contenedor--logos-2">
+                    <a href="https://www.facebook.com/groups/1339948533119446" target="_blank">
+                        <img src="img/logo_facebook.png" alt="logo-facebook">
+                    </a>
+
+                    <a href="https://www.instagram.com/nelsonmunoz.11/" target="_blank">
+                        <img src="img/logo_instagram.png" alt="logo-instagram">
+                    </a>
+
+                    <a href="https://twitter.com/NelsonM78917577" target="_blank">
+                        <img src="img/logo_twitter.png" alt="logo-twitter">
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCIDzQ6Z9PQfXOUjDA-Nk8Cg" target="_blank">
+                        <img src="img/logo_youtube.png" alt="logo-youtube">
+                    </a>
+
+                    <a href="https://github.com/Ginto11" target="_blank">
+                        <img src="img/github.png" alt="logo-github">
+                    </a>
+                </div>
+
+                <div class="contenedor--img">
+                    <img src="img/rick.webp" alt="" width="100%">
+                </div>
+            </div>
+        </footer>
+
+        <template id="character">
+            <div class="contenedor--characters">
+                <div class="contenedor--imagen">
+                    <img class="imagen" src="" alt="">
+                </div>
+                <div class="contenedor--info">
+                    <h2 class="name"> </h2><div style="width: 5px; heigth: 5px; background: green;"></div>
+                    <div class="datos">
+
+                        
+                        <div style="display: flex; gap: 5px;">
+                            <p style="display: inline-block;"><strong>Status:</strong> <p style="display: inline-flex; gap: 3px;" class="status"></p></p>
+                            <p style="display: inline-block;"><strong>Specie:</strong> <p style="display: inline-flex;" class="specie"></p></p>
+                        </div>
+
+                        <div style="display: flex; gap: 5px;">
+                            <p style="display: inline-block;"><strong>Type:</strong> <p style="display: inline-block;" class="type"></p></p>
+                            <p style="display: inline-block;"><strong>Gender:</strong> <p style="display: inline-block;" class="gender"></p></p>
+                        </div>
+
+                        <div style="display: flex; gap: 5px;">
+                            <p style="display: inline-block;"><strong>Origen:</strong> <p style="display: inline-block;" class="origin"></p></p>
+                        </div>
+
+                        <div style="display: flex; gap: 5px;">
+                            <p style="display: inline-block;"><strong>Location:</strong> <p style="display: inline-block; width: 100%;" class="location"></p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+    </main>
+
+    
+    
+    <script src="js/script.js"></script>
+    <script src="js/characters.js" type="module"></script>
+</body>
+</html>
