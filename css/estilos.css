@@ -720,3 +720,105 @@ main{
         height: 50px;
     }
 }
+
+@media screen and (max-width: 620px){
+    *{
+        font-size: 13px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .subtitulo{
+        font-size: 18px;
+    }
+
+    .header h1{
+        font-size: 20px;
+    }
+
+    .header .links{
+        display: none;
+    }
+
+    .header .btn-inactive{
+        display: block;
+    }
+
+    .section{
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+
+    .footer .contenedor--form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .contenedor--form .contenedor--logos-2{
+        display: flex;
+        gap: 10px;
+        width: 70%;
+    }
+
+    .footer .contenedor--form .contenedor--logos-2 a{
+        width: 50px;
+    }
+
+    .footer .contenedor--form .contenedor--logos-2 img{
+        width: 100%;
+    }
+
+    .contenedor--logos{
+        display: none;
+    }
+
+    .container--searcher{
+        flex-direction: column;
+    }
+
+    .container--searcher .searcher{
+        width: 100%;
+    }
+
+    .container--searcher .searcher , .pages{
+        padding: 0;
+    }
+
+    .container--searcher .searcher div{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .contenedor--characters{
+        width: 90%;
+    }
+
+    .contenedor--characters .contenedor--imagen{
+        width: 100%;
+    }
+
+    .contenedor--characters{
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        text-align: left;
+        padding: 30px;
+    }
+
+    .contenedor--info{
+        width: 100%;
+    }
+
+    .contenedor--tecnologias img{
+        width: 60px;
+        height: 60px;
+    }
+}
