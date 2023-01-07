@@ -498,6 +498,17 @@ main{
         width: 90%;
     }
 
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 15px;
+    }
+
     .contenedor--characters .contenedor--imagen{
         width: 100%;
     }
@@ -577,6 +588,17 @@ main{
 
     .contenedor--logos{
         display: none;
+    }
+
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 15px;
     }
 
     .container--searcher{
@@ -689,6 +711,17 @@ main{
         flex-direction: column;
     }
 
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 15px;
+    }
+
     .container--searcher .searcher{
         width: 100%;
     }
@@ -740,6 +773,17 @@ main{
 
     .header .links{
         display: none;
+    }
+
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 15px;
     }
 
     .header .btn-inactive{
