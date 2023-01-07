@@ -390,7 +390,7 @@ main{
     color: #fff9; 
 }
 
-.contenedor--character .character .container--image{
+.contenedor--character .character .contenedor--imagen{
     width: 300px;
 }
 
@@ -399,11 +399,36 @@ main{
     border-radius: 10px;
 }
 
+.github--acerca, .youtube--acerca{
+    color: #fff8;
+    text-decoration: none;
+}
+
+.contenedor--tecnologias{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor--tecnologias img{
+    width: 90px;
+    height: 90px;
+}
+
 
 
 @media screen and (max-width: 320px){
     *{
         font-size: 13px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .subtitulo{
+        font-size: 18px;
     }
 
     .header h1{
@@ -416,10 +441,6 @@ main{
 
     .header .btn-inactive{
         display: block;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        color: #fff;
     }
 
     .section{
@@ -477,6 +498,10 @@ main{
         width: 90%;
     }
 
+    .contenedor--characters .contenedor--imagen{
+        width: 100%;
+    }
+
     .contenedor--characters{
         width: 90%;
         flex-direction: column;
@@ -488,11 +513,24 @@ main{
     .contenedor--info{
         width: 100%;
     }
+
+    .contenedor--tecnologias img{
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media screen and (max-width: 376px){
     *{
         font-size: 13px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .subtitulo{
+        font-size: 18px;
     }
 
     .header h1{
@@ -503,6 +541,11 @@ main{
         display: none;
     }
 
+    .header .btn-inactive{
+        display: block;
+    }
+    
+
     .section{
         width: 90%;
         padding: 10px;
@@ -558,6 +601,10 @@ main{
         width: 90%;
     }
 
+    .contenedor--characters .contenedor--imagen{
+        width: 100%;
+    }
+
     .contenedor--characters{
         width: 90%;
         flex-direction: column;
@@ -569,11 +616,24 @@ main{
     .contenedor--info{
         width: 100%;
     }
+
+    .contenedor--tecnologias img{
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media screen and (max-width: 426px){
     *{
         font-size: 13px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .subtitulo{
+        font-size: 18px;
     }
 
     .header h1{
@@ -594,6 +654,10 @@ main{
         margin-bottom: 0;
     }
 
+    .contenedor--characters .contenedor--imagen{
+        width: 100%;
+    }
+
     .footer{
         padding: 10px;
     }
@@ -649,5 +713,10 @@ main{
 
     .contenedor--info{
         width: 100%;
+    }
+
+    .contenedor--tecnologias img{
+        width: 50px;
+        height: 50px;
     }
 }

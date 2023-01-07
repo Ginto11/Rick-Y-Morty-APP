@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Acerca de</title>
 </head>
 <body>
@@ -19,11 +20,9 @@
             <button class="btn-cerrar-menu">
                 <img src="img/boton.png" alt="">
             </button>
-            <a href="index.html">Home</a>
-            <a href="./characters.html">Characters</a>
-            <a href="">Episodes</a>
-            <a href="">Locations</a>
-            <a href="">About</a>
+            <a href="index.html">Inicio</a>
+            <a href="./characters.html">Personajes</a>
+            <a href="./acerca.html">Acerca de</a>
         </div>
 
         <div class="contenedor--logos">
@@ -39,7 +38,7 @@
                 <img src="img/logo_twitter.png" alt="logo-twitter">
             </a>
 
-            <a href="https://www.youtube.com/channel/UCIDzQ6Z9PQfXOUjDA-Nk8Cg" target="_blank">
+            <a href="https://www.youtube.com/@gustoporlaprogramacion" target="_blank">
                 <img src="img/logo_youtube.png" alt="logo-youtube">
             </a>
 
@@ -53,9 +52,9 @@
                 <h1>API RICK AND MORTY</h1>
             </div>
             <div class="links">
-                <a href="index.html">Home</a>
-                <a href="./characters.html">Characters</a>
-                <a href="./acerca.html">About</a>
+                <a href="index.html">Inicio</a>
+                <a href="./characters.html">Personajes</a>
+                <a href="./acerca.html">Acerca de</a>
             </div>
             <div class="btn-inactive">
                 <button class="icon icon-menu boton-menu"></button>
@@ -63,7 +62,62 @@
         </header>
 
         <section class="section">
-            hola
+            <div class="contenedor--articulo">
+                <h2 class="subtitulo">Acerca de</h2>
+                <br>
+                <article>
+                    <p>
+                        Este sitio web se conecta a la <strong>API</strong> de Rick y Morty, esta nos ofrece informacion muy variada
+                        como lo pueden ser los personajes, las locaciones, y los episodios. Mi objetivo es mostrar algo al usuario cuando el proyecto
+                        este en produccion, por lo que llame fue a los 826 personajes, pero no se muestran todos, debido a que seria una gran cantidad de personajes
+                        por mostrar, y no es recomendable, por lo que aprovechando que esta api tiene paginacion, aproveche esto para implementarla
+                        en el proyecto, haciendo que sea aun mas practico.
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2 class="subtitulo">Datos Importante</h2>
+                    <br>
+                    <ul>
+                        <li><strong>Autor:</strong> Nelson Muñoz.</li>
+                        <li><strong>Cargo: </strong> Estudiante de Ingenieria de Sistemas.</li>
+                        <li><strong>Pais: </strong> Colombia. </li>
+                        <li><strong>Ciudad: </strong> Bogota D.C</li>
+                        <li><strong>GitHub: </strong> <a class="github--acerca" href="https://github.com/Ginto11" target="_blank">Ginto11</a></li>
+                        <li><strong>Canal Youtube: </strong> <a class="youtube--acerca" href="https://www.youtube.com/@gustoporlaprogramacion" target="_blank">GustoPorLaProgramacion.</a></li>
+                    </ul>
+                </article>
+                <br>
+                <article>
+                    <h2 class="subtitulo">Tecnologias</h2>
+                    <br>
+                    <p>
+                        En este sitio web fue realizado en <strong>Visual Studio Code</strong>, se utilizo <strong>JavaScript</strong> para dar mas dinamismo, se utilizo <strong>HTML 5</strong>
+                        , <strong>CSS 3</strong> para dar los estilos correspondientes y para adaptarlo a dispositivos moviles y <strong>Git</strong> como sistema de control de versiones por medio del cual 
+                        se subio todo el proyecto a mi repositorio de <strong> <a class="github--acerca" href="https://github.com/Ginto11" target="_blank">GitGub</a></strong>.
+                    </p>
+                    <br>
+                    <div class="contenedor--tecnologias">
+                        <img src="img/logo_html.png" alt="">
+                        <img src="img/logo_css.png" alt="">
+                        <img src="img/js-logo.png" alt="">
+                        <img src="img/logo-vsc.png" alt="">
+                        <img src="img/logo-git.png" alt="">
+                    </div>
+                </article>
+                <br>
+                <article>
+                    <h2 class="subtitulo">Proximas Actualizaciones.</h2>
+                    <br>
+                    <p>
+                        <ul>
+                            <li>Implementar la seccion de episodios, la cual me traera todos los episodios, y los personajes que se relacionen con dicho episodio.</li>
+                            <li>Implementar la seccion de locaciones, en la que me mostrara la informacion de las locaciones y los residentes.</li>
+                            <li>Creacion de la base de datos, para el formularion de contacto.</li>
+                        </ul>
+                    </p>
+                </article>
+            </div>
         </section>
 
         <footer class="footer">
@@ -73,7 +127,7 @@
                 <form class="form" action="./assets/enviarMensaje.php" method="POST">
                     <input type="text" name="nombre" placeholder="Ingrese su nombre">
                     <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input name="enviar" type="submit" value="Enviar">
+                    <input name="enviar" type="submit" value="Enviar" disabled>
                 </form>
 
                 <div class="contenedor--logos-2">
@@ -89,7 +143,7 @@
                         <img src="img/logo_twitter.png" alt="logo-twitter">
                     </a>
 
-                    <a href="https://www.youtube.com/channel/UCIDzQ6Z9PQfXOUjDA-Nk8Cg" target="_blank">
+                    <a href="https://www.youtube.com/@gustoporlaprogramacion" target="_blank">
                         <img src="img/logo_youtube.png" alt="logo-youtube">
                     </a>
 
@@ -104,5 +158,7 @@
             </div>
         </footer>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
