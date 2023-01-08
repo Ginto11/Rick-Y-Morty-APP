@@ -5,7 +5,7 @@ let numPage = document.getElementById("numPage");
 let listaCharacters = "";
 
 console.info("🤗🙋🏾‍♂️ Hola veo que eres curioso... 😏 soy Nelson Muñoz 😊🌟 y este es mi proyecto 💥, gracias por verlo.✨🤩");
-console.info("😁 Si te gusto, me puedes seguir en mi canal de Youtube 👉🏾 (GustoPorLaProgramación) 😊 ahi realizo videos de programacion y desarrollo web 💯✨. Tambien lo puede encontrar en la seccion de Acerca de 😁🤗");
+console.info("😁 Si te gusto y quieres aprender, me puedes seguir en mi canal de Youtube 👉🏾 (GustoPorLaProgramación) 😊 ahi aprenderas programacion y desarrollo web 💯✨. Tambien lo puedes encontrar en la seccion de Acerca de 😁🤗");
 
 document.addEventListener("DOMContentLoaded", (e) => {
     getAll();
