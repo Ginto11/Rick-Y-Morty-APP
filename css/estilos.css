@@ -509,6 +509,11 @@ main{
         padding: 15px;
     }
 
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
+    }
+
     .contenedor--characters .contenedor--imagen{
         width: 100%;
     }
@@ -598,7 +603,12 @@ main{
 
     .contenedor--character .character{
         width: 90%;
-        padding: 15px;
+        padding: 30px;
+    }
+
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
     }
 
     .container--searcher{
@@ -719,7 +729,12 @@ main{
 
     .contenedor--character .character{
         width: 90%;
-        padding: 15px;
+        padding: 30px;
+    }
+
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
     }
 
     .container--searcher .searcher{
@@ -783,7 +798,12 @@ main{
 
     .contenedor--character .character{
         width: 90%;
-        padding: 15px;
+        padding: 30px;
+    }
+
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
     }
 
     .header .btn-inactive{
