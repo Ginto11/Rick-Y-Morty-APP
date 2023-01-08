@@ -4,6 +4,8 @@ let $fragmento = document.createDocumentFragment();
 let numPage = document.getElementById("numPage");
 let listaCharacters = "";
 
+console.info("🤗 Hola veo que eres curioso... 😏 soy Nelson Muñoz 😊🌟 y este es mi proyecto 💥, gracias por verlo.✨🤩");
+
 document.addEventListener("DOMContentLoaded", (e) => {
     getAll();
 }) 
@@ -105,14 +107,12 @@ function findByName(){
     fetch(`https://rickandmortyapi.com/api/character/?name=${name}`)
         .then((res) => res.json())
         .then((res) => {
-            console.log(res);
             mappingCharacter(res.results);
         })
 }
 
 
 function mappingCharacter(respuesta){
-    console.log(respuesta)
     listaCharacters = "";
     respuesta.forEach(element => {
         listaCharacters += 
