@@ -416,6 +416,19 @@ main{
     height: 90px;
 }
 
+.link-footer{
+    margin-bottom: 20px;
+}
+
+.link-footer a{
+    color: #fff8;
+    text-decoration: none;
+}
+
+.link-footer a:hover{
+    color: #fff;
+}
+
 
 
 @media screen and (max-width: 320px){
@@ -789,6 +802,7 @@ main{
     .header .links{
         display: none;
     }
+
 
     .contenedor--character{
         width: 100%;
