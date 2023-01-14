@@ -303,13 +303,17 @@ main{
 .container--searcher{
     display: flex;
     width: 80%;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 30px;
     color: #3ad0b7;
     text-shadow: 0 0 5px #000;
 }
 
-.container--searcher button{
+.contenedor--pages{
+    color: #3ad0b7;
+}
+
+.contenedor--pages button, .container--searcher button{
     width: 70px;
     cursor: pointer;
     border-radius: 20px;
@@ -319,9 +323,10 @@ main{
     font-weight: bold;
     height: 36px;
     transition: .4s ease all;
+    outline: none;
 }
 
-.container--searcher button:hover{
+.contenedor--pages button:hover{
     box-shadow: 0 0 5px #000;
     color: #fff;
 }
@@ -429,9 +434,7 @@ main{
     color: #fff;
 }
 
-
-
-@media screen and (max-width: 320px){
+@media screen and (max-width: 768px){
     *{
         font-size: 13px;
     }
@@ -450,6 +453,23 @@ main{
 
     .header .links{
         display: none;
+    }
+
+
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 30px;
+    }
+
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
     }
 
     .header .btn-inactive{
@@ -511,22 +531,6 @@ main{
         width: 90%;
     }
 
-    .contenedor--character{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenedor--character .character{
-        width: 90%;
-        padding: 15px;
-    }
-
-    .contenedor--character .character strong{
-        color: #3ad0b7;
-        text-shadow: 0 0 5px #000;
-    }
-
     .contenedor--characters .contenedor--imagen{
         width: 100%;
     }
@@ -544,8 +548,126 @@ main{
     }
 
     .contenedor--tecnologias img{
-        width: 20px;
-        height: 20px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 426px){
+    *{
+        font-size: 13px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .subtitulo{
+        font-size: 18px;
+    }
+
+    .header h1{
+        font-size: 20px;
+    }
+
+    .header a{
+        display: none;
+    }
+
+    .header .btn-inactive{
+        display: block;
+    }
+
+    .section{
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .contenedor--characters .contenedor--imagen{
+        width: 100%;
+    }
+
+    .footer{
+        padding: 10px;
+    }
+
+    .footer .contenedor--form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .contenedor--form .contenedor--logos-2{
+        display: flex;
+        gap: 10px;
+        width: 70%;
+    }
+
+    .footer .contenedor--form .contenedor--logos-2 a{
+        width: 50px;
+    }
+
+    .footer .contenedor--form .contenedor--logos-2 img{
+        width: 100%;
+    }
+
+    .contenedor--logos{
+        display: none;
+    }
+
+    .container--searcher{
+        flex-direction: column;
+    }
+
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 30px;
+    }
+
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
+    }
+
+    .container--searcher .searcher{
+        width: 100%;
+    }
+
+    .container--searcher .searcher , .pages{
+        padding: 0;
+    }
+
+    .container--searcher .searcher div{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+    }
+
+    .contenedor--characters{
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        text-align: left;
+        padding: 30px;
+    }
+
+    .contenedor--info{
+        width: 100%;
+    }
+
+    .contenedor--tecnologias img{
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -668,121 +790,7 @@ main{
     }
 }
 
-@media screen and (max-width: 426px){
-    *{
-        font-size: 13px;
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .subtitulo{
-        font-size: 18px;
-    }
-
-    .header h1{
-        font-size: 20px;
-    }
-
-    .header a{
-        display: none;
-    }
-
-    .header .btn-inactive{
-        display: block;
-    }
-
-    .section{
-        width: 90%;
-        padding: 10px;
-        margin-bottom: 0;
-    }
-
-    .contenedor--characters .contenedor--imagen{
-        width: 100%;
-    }
-
-    .footer{
-        padding: 10px;
-    }
-
-    .footer .contenedor--form{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer .contenedor--form .contenedor--logos-2{
-        display: flex;
-        gap: 10px;
-        width: 70%;
-    }
-
-    .footer .contenedor--form .contenedor--logos-2 a{
-        width: 50px;
-    }
-
-    .footer .contenedor--form .contenedor--logos-2 img{
-        width: 100%;
-    }
-
-    .contenedor--logos{
-        display: none;
-    }
-
-    .container--searcher{
-        flex-direction: column;
-    }
-
-    .contenedor--character{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenedor--character .character{
-        width: 90%;
-        padding: 30px;
-    }
-
-    .contenedor--character .character strong{
-        color: #3ad0b7;
-        text-shadow: 0 0 5px #000;
-    }
-
-    .container--searcher .searcher{
-        width: 100%;
-    }
-
-    .container--searcher .searcher , .pages{
-        padding: 0;
-    }
-
-    .container--searcher .searcher div{
-        width: 100%;
-        display: flex;
-        gap: 15px;
-    }
-
-    .contenedor--characters{
-        width: 90%;
-        flex-direction: column;
-        height: auto;
-        text-align: left;
-        padding: 30px;
-    }
-
-    .contenedor--info{
-        width: 100%;
-    }
-
-    .contenedor--tecnologias img{
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 620px){
+@media screen and (max-width: 320px){
     *{
         font-size: 13px;
     }
@@ -803,23 +811,6 @@ main{
         display: none;
     }
 
-
-    .contenedor--character{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenedor--character .character{
-        width: 90%;
-        padding: 30px;
-    }
-
-    .contenedor--character .character strong{
-        color: #3ad0b7;
-        text-shadow: 0 0 5px #000;
-    }
-
     .header .btn-inactive{
         display: block;
     }
@@ -879,6 +870,22 @@ main{
         width: 90%;
     }
 
+    .contenedor--character{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor--character .character{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contenedor--character .character strong{
+        color: #3ad0b7;
+        text-shadow: 0 0 5px #000;
+    }
+
     .contenedor--characters .contenedor--imagen{
         width: 100%;
     }
@@ -896,7 +903,7 @@ main{
     }
 
     .contenedor--tecnologias img{
-        width: 60px;
-        height: 60px;
+        width: 20px;
+        height: 20px;
     }
 }
