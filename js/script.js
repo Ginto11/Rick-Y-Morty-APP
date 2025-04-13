@@ -9,4 +9,3 @@ document.querySelector(".btn-cerrar-menu").addEventListener("click", ()=>{
 });
 
 console.info("🤗🙋🏾‍♂️ Hola veo que eres curioso... 😏 soy Nelson Muñoz 😊🌟 y este es mi proyecto 💥, gracias por verlo.✨🤩");
-console.info("😁 Si te gusto y quieres aprender, me puedes seguir en mi canal de Youtube 👉🏾 (GustoPorLaProgramación) 😊 ahi aprenderas programacion y desarrollo web 💯✨. Tambien lo puedes encontrar en la seccion de Acerca de 😁🤗");
